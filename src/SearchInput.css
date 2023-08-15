@@ -1,0 +1,16 @@
+.SearchInput {
+	/* background-color: black; */
+	width: 100%;
+}
+
+.SearchInput input {
+	width: 85%;
+	padding: 0.5rem;
+	border: none;
+	background-color: white;
+	font-size: small;
+}
+
+.SearchInput input:focus {
+	outline: none;
+}

@@ -1,0 +1,36 @@
+.SearchWrapper {
+	margin-top: 120px;
+	width: 350px;
+	background-color: white;
+	padding: 0.7rem;
+	border-radius: 0.5rem;
+}
+
+.SearchIcon {
+	/* background-color: red; */
+	color: #e0dfe1;
+}
+
+.Search {
+	display: flex;
+	width: 95%;
+	/* background-color: aqua; */
+	padding: 0.5rem;
+	align-items: center;
+	border-bottom: 2px solid #e0dfe1;
+}
+
+.SearchResult {
+	padding: 0.7rem;
+	border-bottom: 1px solid #e0dfe1;
+	/* border-color: #e0dfe1; */
+}
+
+.SuggestedList {
+	max-height: 300px;
+	overflow-y: scroll;
+}
+
+.SearchResult:hover {
+	background-color: #e0dfe1;
+}

@@ -13,7 +13,8 @@ export default function SearchComponent() {
 		const data = await fetch("https://jsonplaceholder.typicode.com/users");
 		const result = await data.json();
 		const filtered = result.filter((data) => {
-			return data.name.toLowerCase().includes(inputValue);
+			const value = inputValue.toLowerCase();
+			return data.name.toLowerCase().includes(value);
 		});
 		setDrugData(filtered);
 	};
@@ -22,6 +23,10 @@ export default function SearchComponent() {
 		setSearchInput(inputValue);
 		fetchData(inputValue);
 	};
+
+	function clearInput() {
+		setSearchInput("");
+	}
 
 	return (
 		<div>
@@ -32,15 +37,25 @@ export default function SearchComponent() {
 					</div>
 					<SearchInput search={searchInput} setInput={handleChange} />
 				</div>
-				<Link to="">
+				{searchInput !== "" && (
 					<div className="SuggestedList">
 						{drugData.map((drug) => {
-							return <SearchResult key={drug.id} drug={drug} />;
+							return (
+								<Link
+									to={`/drug_details/${drug.id}`}
+									key={drug.id}
+									onClick={clearInput}
+								>
+									<SearchResult drug={drug} />
+								</Link>
+							);
 						})}
 					</div>
-				</Link>
+				)}
 			</section>
-			<Outlet />
+			<div className="detail-container">
+				<Outlet />
+			</div>
 		</div>
 	);
 }

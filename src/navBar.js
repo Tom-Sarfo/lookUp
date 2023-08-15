@@ -30,7 +30,7 @@ export default function NavBar() {
 					<Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
 						Look<b>Up</b>
 					</Typography>
-					<Button color="inherit">Login</Button>
+					<Button color="inherit">Stock Position</Button>
 				</Toolbar>
 			</AppBar>
 		</Box>

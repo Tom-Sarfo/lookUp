@@ -1,5 +1,4 @@
 import { useForm } from "react-hook-form";
-import { useState } from "react";
 import "./SearchInput.css";
 
 export default function SearchInput({ search, setInput }) {
@@ -13,7 +12,7 @@ export default function SearchInput({ search, setInput }) {
 			<input
 				type="text"
 				{...register("searchField")}
-				placeholder="Search Drug"
+				placeholder="Search Drug Name"
 				onChange={(e) => setInput(e.target.value)}
 			/>
 		</div>

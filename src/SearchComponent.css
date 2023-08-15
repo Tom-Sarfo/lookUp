@@ -17,12 +17,12 @@
 	/* background-color: aqua; */
 	padding: 0.5rem;
 	align-items: center;
-	border-bottom: 2px solid #e0dfe1;
+	/* border-bottom: 2px solid #e0dfe1; */
 }
 
 .SearchResult {
 	padding: 0.7rem;
-	border-bottom: 1px solid #e0dfe1;
+	border-top: 1px solid #e0dfe1;
 	/* border-color: #e0dfe1; */
 }
 
@@ -33,4 +33,11 @@
 
 .SearchResult:hover {
 	background-color: #e0dfe1;
+}
+
+.detail-container {
+	background-color: white;
+	border-radius: 0.5rem;
+	margin-top: 1rem;
+	padding: 0.5rem;
 }

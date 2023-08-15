@@ -16,12 +16,11 @@ function App() {
 			<nav>
 				<NavBar />
 			</nav>
-			<RouterProvider router={router}>
-				<div className="content">
-					{/* <Outlet /> */}
+			<div className="content">
+				<RouterProvider router={router}>
 					<SearchComponent />
-				</div>
-			</RouterProvider>
+				</RouterProvider>
+			</div>
 		</div>
 	);
 }

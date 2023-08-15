@@ -54,7 +54,7 @@ export default function SearchComponent() {
 				)}
 			</section>
 			<div className="detail-container">
-				<Outlet />
+				<Outlet context={[drugData]} />
 			</div>
 		</div>
 	);

@@ -1,7 +1,7 @@
 export default function SearchResult({ drug }) {
 	return (
 		<div className="SearchResult">
-			<p>{drug.name}</p>
+			<p>{drug.DrugName}</p>
 		</div>
 	);
 }

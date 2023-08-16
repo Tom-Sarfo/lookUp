@@ -43,6 +43,10 @@
 }
 
 .detail-container table tr {
+	padding-bottom: 0.3rem;
+}
+
+.detail-container table tr {
 	display: flex;
 	justify-content: space-between;
 }

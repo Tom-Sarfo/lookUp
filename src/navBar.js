@@ -28,7 +28,7 @@ export default function NavBar() {
 						<MenuIcon />
 					</IconButton>
 					<Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-						Look<b>Up</b>
+						Look<Strong>Up</Strong>
 					</Typography>
 					<Button color="inherit">Stock Position</Button>
 				</Toolbar>

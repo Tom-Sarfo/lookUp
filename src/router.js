@@ -1,4 +1,4 @@
-import SearchComponent from "./SearchComponent.js";
+import SearchComponent from "./searchComponent.js";
 import ResultDetails from "./resultDetails.js";
 
 export const Routers = [

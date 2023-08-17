@@ -5,7 +5,7 @@ import "@fontsource/roboto/700.css";
 import "./App.css";
 
 import NavBar from "./navBar";
-import SearchComponent from "./SearchComponent";
+import SearchComponent from "./searchComponent";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Routers } from "./router";
 
